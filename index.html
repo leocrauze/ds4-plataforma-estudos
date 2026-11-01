@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#176b4d">
+  <meta name="description" content="Conteúdos gratuitos de apoio escolar para estudantes do Ensino Fundamental II, alinhados à BNCC e ao ODS 4.">
+  <title>Estudo de Bolso — Portal de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Estudo de Bolso, início"><span class="brand-mark" aria-hidden="true">✿</span><span>Estudo de Bolso<small>Portal de Estudos</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#materias">Matérias</a><a href="#quizzes">Quizzes</a><a href="#feedback">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <p class="eyebrow">Aprender abre caminhos</p>
+        <h1>Um espaço para aprender e crescer.</h1>
+        <p>Bem-vindo ao <strong>Estudo de Bolso</strong>, um portal gratuito de apoio pedagógico para estudantes do 6º ao 9º ano. Estude no seu ritmo, revise ideias importantes e pratique com quizzes.</p>
+        <p>Projeto de Extensão Universitária em Engenharia de Software, em parceria com a Escola Estadual Profª Juracy Neves de Mello Ferraciú.</p>
+        <div class="hero-actions"><a class="button" href="#materias">Explorar matérias</a><a class="button secondary" href="#quizzes">Fazer um quiz</a></div>
+      </div>
+    </section>
+
+    <section id="projeto">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Nosso propósito</p><h2>Conhecimento acessível para todos</h2><p>O portal democratiza o acesso a conteúdos didáticos objetivos, gratuitos e alinhados à Base Nacional Comum Curricular (BNCC), reforçando aprendizagens essenciais com exemplos próximos do cotidiano.</p></div>
+        <div class="about-grid">
+          <article class="info-card"><h3>Aprenda com autonomia</h3><p>Consulte resumos e pratique quando quiser, sem cadastro e sem barreiras.</p></article>
+          <article class="info-card"><h3>Conteúdo para a sua etapa</h3><p>Materiais introdutórios pensados para estudantes do 6º ao 9º ano.</p></article>
+          <article class="info-card"><span class="ods-badge"><span class="ods-number">4</span> ODS — Educação de Qualidade</span><p style="margin-top:.8rem">Uma iniciativa comunitária conectada ao compromisso global por uma educação inclusiva e de qualidade.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="subjects-section" id="materias">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Estude por tema</p><h2>Matérias e conteúdos</h2><p>Escolha uma matéria para ver pontos-chave e um exemplo prático.</p></div>
+        <div class="subject-tabs" role="tablist" aria-label="Matérias">
+          <button class="tab-button" type="button" role="tab" aria-selected="true" data-subject="portugues">Português</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-subject="matematica">Matemática</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-subject="ciencias">Ciências</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-subject="historia">História</button>
+        </div>
+        <div id="subject-panel" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="quizzes">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Pratique o que aprendeu</p><h2>Quizzes de fixação</h2><p class="quiz-intro">Cada quiz tem três perguntas rápidas. Você recebe uma explicação após responder e vê seu placar no final.</p></div>
+        <div class="quiz-grid">
+          <article class="quiz-card"><h3>📚 Português</h3><p>Compreensão de texto e gêneros do cotidiano.</p><button class="button" type="button" data-start-quiz="portugues">Começar quiz</button></article>
+          <article class="quiz-card"><h3>➗ Matemática</h3><p>Porcentagens, frações e medidas.</p><button class="button" type="button" data-start-quiz="matematica">Começar quiz</button></article>
+          <article class="quiz-card"><h3>🔬 Ciências</h3><p>Água, energia e cuidado ambiental.</p><button class="button" type="button" data-start-quiz="ciencias">Começar quiz</button></article>
+          <article class="quiz-card"><h3>🏛️ História</h3><p>Fontes históricas e organização do tempo.</p><button class="button" type="button" data-start-quiz="historia">Começar quiz</button></article>
+        </div>
+        <div class="quiz-area" id="quiz-area" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="feedback-section" id="feedback">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Espaço de escuta</p><h2>Ajude a construir este portal</h2><p>Alunos e professores: contem como foi a experiência, sugiram melhorias ou indiquem novas matérias para estudarmos juntos.</p></div>
+        <div class="feedback-card">
+          <div><h3>Sua voz faz parte do projeto</h3><p class="feedback-quote">“Sua opinião é fundamental para evoluirmos este projeto comunitário!”</p><p>O formulário oficial abre em uma nova aba e é gerenciado pelo Google Forms.</p></div>
+          <div><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdF46g4Lbu3M2VL30HtyMjutyJ-7bzq0UptAptpAVSPRKe1aA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Enviar meu feedback ↗</a><p class="feedback-note">Você será direcionado ao formulário externo.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p><strong>Projeto de Extensão Universitária</strong><br>Engenharia de Software</p>
+      <p><strong>Parceria</strong><br>Escola Estadual Profª Juracy Neves de Mello Ferraciú</p>
+      <p><strong>Compromisso</strong><br>ODS 4 — Educação de Qualidade · Conteúdo de apoio alinhado à BNCC</p>
+    </div>
+  </footer>
+</body>
+</html>
